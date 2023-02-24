@@ -12,18 +12,19 @@ function renderObjectToUI() {
         </section>
         <section class="body-desc">
             <section>
-                <H3>Omkrets <span>${body.circumference} km</span></H3>
-                <H3>Max temperatur <span>${body.temp.day} C</span></H3>
+                <h3>Omkrets <span>${body.circumference} km</span></h3>
+                <h3>Max temperatur <span>${body.temp.day} C</span></h3>
+                <h3>Dygnslängd <span>${body.rotation} dygn på jorden</span></h3>
             </section>
             <section>
-                <H3>KM från solen <span>${body.distance} km</span></H3>
-                <H3>Min temperatur <span>${body.temp.night} C</span></H3>
+                <h3>KM från solen <span>${body.distance} km</span></h3>
+                <h3>Min temperatur <span>${body.temp.night} C</span></h3>
+                <h3>Årslängd <span>${body.orbitalPeriod} dygn på jorden</span></h3>
             </section>
         </section>
         <section>
             <H3>Månar <span>${body.moons
               .map(
-                //Loops through the list and creates a li-element for each moon
                 (moon) => `<li>${moon}
             </li>`
               )
