@@ -52,7 +52,7 @@ function eventlistenerToBody() {
       
       let index = clickableItem.id;
       localStorage.setItem("body", JSON.stringify(bodies[index]));
-      window.location.href = "body.html";
+      window.location.href = "planet.html";
     });
   });
 }
